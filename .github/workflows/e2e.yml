@@ -13,18 +13,18 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Checkout test suite
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # The app under test lives in its own repo — check it out alongside the
       # suite so the static server has something to serve in CI.
       - name: Checkout SkyCast app under test
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: jurie24102/skycast
           path: skycast
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
