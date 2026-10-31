@@ -22,6 +22,14 @@ The application under test lives in the sibling repo
 deployed at https://jurie24102.github.io/skycast/). Together they demonstrate
 the full build-it → break-it → prove-it loop.
 
+### Honest note
+
+This suite was built with AI assistance (Claude) under my direction, and it is
+the curriculum for my QA learning sprint. I can run it, read the reports and
+explain the strategy at a high level; week by week I'm taking ownership —
+writing tests myself, breaking the app on purpose, and debugging failures.
+That progress is visible in the commit history.
+
 ## Test coverage matrix
 
 | User journey | Test file | Key assertions |
