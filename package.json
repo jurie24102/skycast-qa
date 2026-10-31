@@ -1,0 +1,21 @@
+{
+  "name": "skycast-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end UI test suite for SkyCast — Playwright + TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:quick": "playwright test --project=chromium --project=webkit",
+    "test:live": "RUN_LIVE_TESTS=1 playwright test --grep @live",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  }
+}
