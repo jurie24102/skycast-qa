@@ -140,9 +140,9 @@ skycast-qa/
 ## CI
 
 The [E2E workflow](.github/workflows/e2e.yml) runs on every push and PR:
-installs dependencies and all three browser engines, executes the suite, and
-uploads the HTML report (+ traces, screenshots, videos of failures) as a
-workflow artifact.
+checks out the app repo alongside the suite, installs dependencies and all
+three browser engines, executes the suite, and uploads the HTML report
+(+ traces, screenshots, videos of failures) as a workflow artifact.
 
 ## Troubleshooting
 
